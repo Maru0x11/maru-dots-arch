@@ -1,0 +1,5 @@
+[general]
+early-exit = true
+copy-command = "wl-copy"
+actions-on-enter = ["save-to-clipboard"]
+actions-on-escape = ["exit"]

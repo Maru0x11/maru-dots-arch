@@ -1,0 +1,7 @@
+[[custom.tmux]
+description = "Indicator that shows up if currently in a tmux session"
+command = """ echo '■' """
+when = """ [[ -n $TMUX ]] && exit 0 """custom.tmux]
+description = "Indicator that shows up if currently in a tmux session"
+command = """ echo '■' """
+when = """ [[ -n $TMUX ]] && exit 0 """

@@ -1,0 +1,11 @@
+
+# default apps 
+export EDITOR=nvim
+
+
+# aliases 
+
+alias ll='ls -l'
+alias lh='ls -lah'
+alias pacq='pacman -Ss'
+alias yayq='yay -Ss'
