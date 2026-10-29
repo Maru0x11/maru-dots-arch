@@ -157,10 +157,18 @@
   (dired-mode . nerd-icons-dired-mode))
 
 ;; theme
-(use-package tokyo-night
-  :ensure t
-  :config
-  (load-theme 'tokyo-night-moon t))
+(use-package modus-ewal-theme
+:config
+(unless (daemonp)
+  (load-theme 'modus-ewal t))
+(defun custom-modus-ewal-theme-load-once ()
+  (and (not (member 'modus-ewal custom-enabled-themes))
+       (load-theme 'modus-ewal t))
+  ;; once run, it can be removed
+  (remove-hook 'server-after-make-frame-hook
+               #'custom-modus-ewal-theme-load-once))
+(add-hook 'server-after-make-frame-hook
+          #'custom-modus-ewal-theme-load-once))
 
 ;; terminal stuff 
 
