@@ -9,5 +9,8 @@ return {
 	    -- or leave it empty to use the default settings
 	    -- refer to the configuration section below
 	}
-    }
+    },
+    -- will remove this shitty ass language soon 
+    { "mason-org/mason.nvim", opts = {} },
+{ "mfussenegger/nvim-jdtls", ft = "java" },
 }

@@ -2,6 +2,7 @@ import QtQuick
 import Quickshell
 import Quickshell.Io
 import Quickshell.Services.UPower
+import Quickshell.Services.SystemTray
 
 ShellRoot {
     QtObject {
@@ -37,9 +38,37 @@ ShellRoot {
         }
     }
 
-    PanelWindow {
+	property string weather: "..."
+	Process {
+    id: weatherProc
+    command: ["sh", "-c", "curl -s --max-time 10 https://wttr.in/cairo\?format\=1| sed 's/ +/''/' "]
+    running: true   // fetch once at startup
+
+    stdout: SplitParser {
+        onRead: data => {
+            if (data.trim() !== "") weather = data.trim()
+        }
+    }
+}
+
+Timer {
+    interval: 30 * 60 * 1000   
+    running: true
+    repeat: true
+    onTriggered: if (!weatherProc.running) weatherProc.running = true
+}
+
+        PanelWindow {
+	id:statusbar
+	height:30
         anchors { top: true; left: true; right: true }
-        implicitHeight: 30
+	margins {
+	    top:2
+	    left:2
+	    right:2
+	}
+	exclusiveZone: height + margins.top
+
         color: c.bg
 
         // tags, left
@@ -47,7 +76,7 @@ ShellRoot {
             anchors.left: parent.left
             anchors.leftMargin: 15
             anchors.verticalCenter: parent.verticalCenter
-            spacing: 4
+            spacing: 20
 
             Repeater {
                 model: 4
@@ -72,29 +101,69 @@ ShellRoot {
                 }
             }
         }
+	Row{
+	    anchors.right: parent.right
+	    anchors.rightMargin: 20
+	    spacing: 15
+   
+       Text {
+        anchors.verticalCenter: parent.verticalCenter
+        text: "|"
+        color: c.dim
+        font.family: c.font
+        font.pixelSize: 20
+    }
+
+// battery
+Text {
+   id: battery
+   anchors.verticalCenter: parent.verticalCenter
+   readonly property var bat: UPower.displayDevice
+   readonly property int pct: bat ? Math.round(bat.percentage * 100) : 0
+   visible: bat && bat.isPresent
+   text: (bat && bat.state === UPowerDeviceState.Charging ? "󰂄 " : "󰁹 ") + pct + "%"
+   color: pct <= 15 ? c.urgent : (pct <= 30 ? c.warn : c.good)
+   font.family: c.font
+   font.pixelSize: 20
+}
 
         Text {
-            id: dateText
-            anchors.right: parent.right
-            anchors.rightMargin: 20
-            text: Qt.formatDateTime(clock.date, "dddd, MMMM d  hh:mm ap")
-            color: c.fg
-            font.family: c.font
-            font.pixelSize: 18
-        }
+        anchors.verticalCenter: parent.verticalCenter
+        text: "|"
+        color: c.dim
+        font.family: c.font
+        font.pixelSize: 20
+    }
+    //wheather 
+    Text {
+    anchors.verticalCenter: parent.verticalCenter
+    text: weather
+    color: c.fg
+    font.family: c.font
+    font.pixelSize: 18
+}
 
-        // battery, right next to the date
         Text {
-            anchors.left: dateText.left
-            anchors.leftMargin: -50
-            anchors.verticalCenter: dateText.verticalCenter
-            readonly property var bat: UPower.displayDevice
-            readonly property int pct: bat ? Math.round(bat.percentage * 100) : 0
-            visible: bat && bat.isPresent
-            text: (bat && bat.state === UPowerDeviceState.Charging ? "󰂄 " : "󰁹 ") + pct + "%"
-            color: pct <= 15 ? c.urgent : (pct <= 30 ? c.warn : c.good)
-            font.family: c.font
-            font.pixelSize: 14
-        }
+        anchors.verticalCenter: parent.verticalCenter
+        text: "|"
+        color: c.dim
+        font.family: c.font
+        font.pixelSize: 20
+    }
+
+
+	  // date
+    Text {
+        id: dateText
+        anchors.verticalCenter: parent.verticalCenter
+        text: Qt.formatDateTime(clock.date, "dddd, MMMM d  hh:mm ap")
+        color: c.fg
+        font.family: c.font
+        font.pixelSize: 18
+    }	
+
+     }
+
+
     }
 }

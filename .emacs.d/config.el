@@ -75,6 +75,17 @@
 ;; Use `zsh' instead of `sh' in the `shell' code block.
 (setq org-babel-sh-command "zsh")
 
+(use-package org-bullets :ensure t)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+(setq org-bullets-bullet-list
+      '("①" "②" "③" "④" "⑤" "⑥" "⑦" "⑧" "⑨" "⑩"))
+
+;; Indent levels.
+(add-hook 'org-mode-hook 'org-indent-mode)
+
+;; Use this character(s) for ellipsis.
+(setq org-ellipsis "...")
+
 ;; Use C++17.
 (setq org-babel-C++-compiler "g++ -std=c++17")
 
@@ -205,4 +216,25 @@
 ;; delete exported HTML file after markdown-live-preview-export is called
 (setq markdown-live-preview-delete-export 'delete-on-export)
 
-(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+;; display line num for pls 
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)  
+
+;; auto pairs inside prog mode and org mode
+(setq electric-pair-pairs '((?\{ . ?\})
+			      (?\" . ?\")))
+(add-hook 'prog-mode-hook #'electric-pair-local-mode)
+(add-hook 'org-mode-hook #'electric-pair-local-mode)
+
+
+
+;; will remove this soon 
+
+(add-to-list 'major-mode-remap-alist '(java-mode . java-ts-mode))
+
+(use-package eglot
+  :ensure nil
+  :hook (java-ts-mode . eglot-ensure)
+  :bind (:map eglot-mode-map
+              ("C-c r" . eglot-rename)
+              ("C-c a" . eglot-code-actions)
+              ("C-c f" . eglot-format)))

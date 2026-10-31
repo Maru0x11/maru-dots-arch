@@ -11,18 +11,11 @@ systemctl --user restart xdg-desktop-portal &
 # also run wlr cuz some apps need it 
 /usr/lib/xdg-desktop-portal-wlr  >/dev/null 2>&1 &
 
-# # night light
-# wlsunset >/dev/null 2>&1 &
-#
-
 # bar 
 qs >/dev/null 2>&1 &
 
-
 # wallpaper 
  awww-daemon >/dev/null 2>&1 &
-
-
 
 #TODO: implement a wallpaper picker
 
@@ -34,11 +27,14 @@ nm-applet >/dev/null 2>&1 &
 /usr/lib/xfce-polkit/xfce-polkit >/dev/null 2>&1 &
 
 #clipboard manager
-cliphist wipe
-wl-paste --type image --watch cliphist store
-wl-paste --type text --watch cliphist store
+cliphist wipe || true
+wl-paste --type image --watch cliphist store >/dev/null 2>&1 &
+wl-paste --type text --watch cliphist store >/dev/null 2>&1 &
 
 
+
+#manga and ocr stuff 
+lancet >/dev/null 2>&1 &
 
 # IME 
 fcitx5 --replace -d >/dev/null 2>&1 &
