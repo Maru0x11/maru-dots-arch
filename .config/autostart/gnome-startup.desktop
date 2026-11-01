@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=GNOME Startup
+Exec=/home/maru/dotfiles/.confing/scripts/autostart.sh
+Terminal=false
