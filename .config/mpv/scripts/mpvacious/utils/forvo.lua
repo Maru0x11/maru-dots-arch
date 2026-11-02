@@ -130,7 +130,7 @@ local function make_forvo(components)
     --- Return the pronunciation search page or a fetch error.
     local function fetch_pronunciation_page(word)
         -- Search this word on forvo.
-        local curl_args = { "-f", "-s", string.format("https://forvo.com/search/%s/ja", url_encode(word)) }
+        local curl_args = { "-f", "-s", string.format("https://forvo.com/search/%s/de", url_encode(word)) }
         local response = self.platform_api.curl_request { args = curl_args }
         -- Only a successful request with a nonempty page can contain usable pronunciation data.
         if not command_succeeded(response) or not h.is_non_empty_str(response.stdout) then

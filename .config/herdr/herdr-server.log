@@ -1040,3 +1040,63 @@
 2026-11-01T03:41:17.492156Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 1, signal: None }"
 2026-11-01T03:41:17.496372Z  INFO herdr::pane: pane session terminated pane=3 pid=5054 signal=Hangup
 2026-11-01T03:41:17.498531Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=5029
+2026-11-02T02:38:31.807143Z  INFO herdr::api::server: api server listening path=/home/maru/.config/herdr/herdr.sock
+2026-11-02T02:38:31.817308Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-11-02T02:38:31.822406Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=4032
+2026-11-02T02:38:31.823635Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-11-02T02:38:31.825092Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=4035
+2026-11-02T02:38:31.825560Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-11-02T02:38:31.826813Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=4038
+2026-11-02T02:38:31.827307Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-11-02T02:38:31.827330Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-11-02T02:38:32.022880Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T02:38:32.023973Z  INFO herdr::server::headless::bootstrap: restored session already has workspaces; ignoring startup cwd cwd=/home/maru/dotfiles/.config/mpv
+2026-11-02T02:38:32.024228Z  INFO herdr::server::headless: client protocol socket listening path=/home/maru/.config/herdr/herdr-client.sock
+2026-11-02T02:38:32.024497Z  INFO herdr::server::headless::bootstrap: herdr server started api_socket=/home/maru/.config/herdr/herdr.sock client_socket=/home/maru/.config/herdr/herdr-client.sock
+2026-11-02T02:38:32.025155Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=4014
+2026-11-02T02:38:32.294461Z  INFO herdr::server::headless: client connected client_id=2 cols=143 rows=28 cell_width_px=13 cell_height_px=34 surface_active=true render_encoding=SemanticFrame
+2026-11-02T02:38:45.685388Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
+2026-11-02T02:38:45.689913Z  INFO herdr::pane: pane session terminated pane=1 pid=4032 signal=Hangup
+2026-11-02T02:38:45.691285Z  WARN herdr::app::actions: PaneDied for unknown pane pane=1
+2026-11-02T02:38:49.189745Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-11-02T02:38:49.190140Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-11-02T02:38:50.902704Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 1, signal: None }"
+2026-11-02T02:38:50.907663Z  INFO herdr::pane: pane session terminated pane=3 pid=4038 signal=Hangup
+2026-11-02T02:38:50.908369Z  WARN herdr::app::actions: PaneDied for unknown pane pane=3
+2026-11-02T02:38:55.918667Z  INFO herdr::persist::writer: preserved session recovery copy event="persist.backup" subsystem="persist" outcome="ok" path=/home/maru/.config/herdr/session.json backup_path=/home/maru/.config/herdr/session-snapshots/session-000000000000000000001793587135916670923-4014-0.json
+2026-11-02T02:38:55.918809Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/maru/.config/herdr/session.json workspaces=1
+2026-11-02T02:38:59.965450Z  INFO herdr::pane: agent changed pane=2 previous_agent=None agent=Some(Antigravity) process=agy pgid=Some(4761)
+2026-11-02T02:39:01.594530Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=26 cols=68 scrollback_limit_bytes=10000000
+2026-11-02T02:39:01.596991Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=4785
+2026-11-02T02:39:01.597258Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-11-02T02:39:06.607349Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/maru/.config/herdr/session.json workspaces=1
+2026-11-02T02:39:13.683663Z  INFO herdr::pane: agent changed pane=4 previous_agent=None agent=Some(Antigravity) process=agy pgid=Some(5068)
+2026-11-02T02:39:25.416935Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-11-02T02:39:30.423129Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/maru/.config/herdr/session.json workspaces=1
+2026-11-02T02:39:50.273790Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/maru/.config/herdr/session.json workspaces=1
+2026-11-02T02:55:31.485630Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-11-02T02:55:36.492866Z  INFO herdr::persist::writer: preserved session recovery copy event="persist.backup" subsystem="persist" outcome="ok" path=/home/maru/.config/herdr/session.json backup_path=/home/maru/.config/herdr/session-snapshots/session-000000000000000000001793588136488818219-4014-0.json
+2026-11-02T02:55:36.495195Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/maru/.config/herdr/session.json workspaces=1
+2026-11-02T02:55:38.432548Z  INFO herdr::pane: agent changed pane=4 previous_agent=Some(Antigravity) agent=None pgid=Some(4785)
+2026-11-02T02:55:43.137149Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/maru/.config/herdr/session.json workspaces=1
+2026-11-02T02:55:52.733834Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/maru/.config/herdr/session.json workspaces=1
+2026-11-02T02:57:25.935177Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 1, signal: None }"
+2026-11-02T02:57:25.940658Z  INFO herdr::pane: pane session terminated pane=4 pid=4785 signal=Hangup
+2026-11-02T02:57:25.942425Z  WARN herdr::app::actions: PaneDied for unknown pane pane=4
+2026-11-02T02:57:29.054184Z  INFO herdr::pane: agent changed pane=2 previous_agent=Some(Antigravity) agent=None pgid=Some(4035)
+2026-11-02T02:57:33.759730Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/maru/.config/herdr/session.json workspaces=1
+2026-11-02T02:57:46.419898Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 0, signal: None }"
+2026-11-02T02:57:46.420180Z  INFO herdr::pane: pane session terminated pane=2 pid=4035 signal=Hangup
+2026-11-02T02:57:46.420620Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=28 cols=120 scrollback_limit_bytes=10000000
+2026-11-02T02:57:46.422637Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=10649
+2026-11-02T02:57:46.422974Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w5" pane_id=5
+2026-11-02T02:57:46.422997Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w5"
+2026-11-02T02:57:46.423008Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w5" tab_id="w5:t1"
+2026-11-02T02:57:51.463383Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/maru/.config/herdr/session.json workspaces=1
+2026-11-02T02:58:23.478311Z  INFO herdr::server::headless: client detached client_id=2
+2026-11-02T03:08:32.026114Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T03:38:32.027968Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T04:08:32.028437Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T04:11:01.394287Z  INFO herdr::server::headless: client connected client_id=4 cols=120 rows=28 cell_width_px=13 cell_height_px=34 surface_active=true render_encoding=SemanticFrame
+2026-11-02T04:11:23.237683Z  INFO herdr::server::headless: client detached client_id=4
+2026-11-02T04:38:32.029204Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"

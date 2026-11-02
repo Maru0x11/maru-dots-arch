@@ -49,7 +49,7 @@ this.get_default = function()
 
         -- Secondary subtitle
         secondary_sub_auto_load = true, -- Automatically load secondary subtitle track when a video file is opened.
-        secondary_sub_lang = "eng,en,rus,ru,jp,jpn,ja", -- Language of secondary subs that should be automatically loaded.
+        secondary_sub_lang = "eng,en,deu,ger,de", -- Language of secondary subs that should be automatically loaded.
         secondary_sub_area = 0.15, -- Hover area. Fraction of the window from the top.
         secondary_sub_visibility = "auto", -- One of: 'auto', 'never', 'always'. Controls secondary_sid visibility. Ctrl+V to cycle.
 
@@ -77,7 +77,7 @@ this.get_default = function()
         preview_audio = false, -- play created audio clips in background.
 
         -- Menu
-        menu_font_name = "Noto Sans CJK JP",
+        menu_font_name = "Noto Sans",
         menu_font_size = 25,
         menu_max_shown_lines = this.default_menu_max_shown_lines,
         show_selected_text = true,
@@ -142,7 +142,7 @@ this.get_default = function()
         vocab_audio_field = "VocabAudio", -- target word audio
 
         --  Custom Subtitle Filter
-        custom_subtitle_filter_mode = "japanese", -- A custom string passed to the custom filter script
+        custom_subtitle_filter_mode = "german", -- A custom string passed to the custom filter script
 
         -- New note timer
         enable_new_note_timer = true, -- Start the new note checker when mpv starts.

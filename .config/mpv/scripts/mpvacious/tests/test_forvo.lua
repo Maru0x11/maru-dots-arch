@@ -43,7 +43,7 @@ end
 --- Check source requests and temporary-file cleanup for one existing format.
 local function assert_forvo_test_requests(state, case, filename)
     h.assert_equals(state.requests, {
-        { "-f", "-s", "https://forvo.com/search/word/ja" },
+        { "-f", "-s", "https://forvo.com/search/word/de" },
         {
             "https://audio00.forvo.com/" .. case.source_format .. "/clip." .. case.source_format,
             "-f",
