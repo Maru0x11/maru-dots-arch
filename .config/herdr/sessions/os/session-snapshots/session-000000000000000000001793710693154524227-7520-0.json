@@ -1,0 +1,82 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "w1",
+      "custom_name": null,
+      "identity_cwd": "/home/maru/Projects/os_assign_one",
+      "public_pane_numbers": {
+        "4": 10,
+        "1": 9,
+        "7": 13,
+        "2": 2
+      },
+      "next_public_pane_number": 14,
+      "public_tab_numbers": [
+        1,
+        2
+      ],
+      "next_public_tab_number": 5,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 1
+              },
+              "second": {
+                "Split": {
+                  "direction": "Horizontal",
+                  "ratio": 0.24999996,
+                  "first": {
+                    "Pane": 4
+                  },
+                  "second": {
+                    "Pane": 7
+                  }
+                }
+              }
+            }
+          },
+          "panes": {
+            "1": {
+              "cwd": "/home/maru/Projects/os_assign_one"
+            },
+            "7": {
+              "cwd": "/home/maru/Projects/os_assign_one"
+            },
+            "4": {
+              "cwd": "/home/maru/Projects/os_assign_one"
+            }
+          },
+          "zoomed": true,
+          "focused": 4,
+          "root_pane": 1
+        },
+        {
+          "custom_name": "docs",
+          "layout": {
+            "Pane": 2
+          },
+          "panes": {
+            "2": {
+              "cwd": "/home/maru/Projects/os_assign_one"
+            }
+          },
+          "zoomed": false,
+          "focused": 2,
+          "root_pane": 2
+        }
+      ],
+      "active_tab": 0
+    }
+  ],
+  "active": 0,
+  "selected": 0,
+  "sidebar_width": null,
+  "sidebar_section_split": null,
+  "collapsed_space_keys": []
+}

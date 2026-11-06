@@ -23,13 +23,10 @@ export LIBVA_DRIVER_NAME=iHD
 
 export EDITOR=nvim
 
-#nnn file manager related stuff 
-export NNN_PLUG='f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'
-
 #aliases 
 
-alias ll='ls -l'
-alias lh='ls -lah'
+alias ll='lsd -l'
+alias lh='lsd -lah'
 
 # alywas run obs with prime-run to use the gpu
 alias obs='prime-run obs'
@@ -39,11 +36,11 @@ alias obs='prime-run obs'
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="apple"
 
 #oh my zsh plugins
 
-plugins=(git archlinux zsh-autosuggestions)
+plugins=(git archlinux zsh-autosuggestions zsh-syntax-highlighting zoxide)
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ffffff,bg=grey,bold,underline"
 

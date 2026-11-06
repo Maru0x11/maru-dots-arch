@@ -458,6 +458,12 @@ global_binds_menu.bindings_switch = switch.new {
         text = "Open quick card menu",
     },
     {
+        key = "Alt+p",
+        name = "mpvacious-next-profile",
+        fn = menu:with_update { self.load_next_profile },
+        text = "Switch to next profile",
+    },
+    {
         key = "Ctrl+g",
         name = "mpvacious-animated-snapshot-toggle",
         fn = encoder.snapshot.toggle_animation,

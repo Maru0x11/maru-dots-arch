@@ -1100,3 +1100,55 @@
 2026-11-02T04:11:01.394287Z  INFO herdr::server::headless: client connected client_id=4 cols=120 rows=28 cell_width_px=13 cell_height_px=34 surface_active=true render_encoding=SemanticFrame
 2026-11-02T04:11:23.237683Z  INFO herdr::server::headless: client detached client_id=4
 2026-11-02T04:38:32.029204Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T16:46:00.871960Z  INFO herdr::api::server: api server listening path=/home/maru/.config/herdr/herdr.sock
+2026-11-02T16:46:00.880640Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-11-02T16:46:00.884599Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=2171
+2026-11-02T16:46:00.885734Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-11-02T16:46:00.885767Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-11-02T16:46:01.063290Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T16:46:01.064714Z  INFO herdr::server::headless::bootstrap: restored session already has workspaces; ignoring startup cwd cwd=/home/maru/Projects/os_assign_one
+2026-11-02T16:46:01.065035Z  INFO herdr::server::headless: client protocol socket listening path=/home/maru/.config/herdr/herdr-client.sock
+2026-11-02T16:46:01.065331Z  INFO herdr::server::headless::bootstrap: herdr server started api_socket=/home/maru/.config/herdr/herdr.sock client_socket=/home/maru/.config/herdr/herdr-client.sock
+2026-11-02T16:46:01.066260Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=2153
+2026-11-02T16:46:01.081474Z  INFO herdr::server::headless: client connected client_id=2 cols=120 rows=28 cell_width_px=13 cell_height_px=34 surface_active=true render_encoding=SemanticFrame
+2026-11-02T16:46:11.057926Z  INFO herdr::server::headless: client detached client_id=2
+2026-11-02T17:16:01.065861Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T17:46:01.066776Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T18:16:01.067483Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T18:46:01.069032Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T19:16:01.069769Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T19:46:01.070866Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T20:16:01.072311Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T20:46:01.073142Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T21:16:01.074216Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T21:46:01.075403Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T22:16:01.076706Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T22:46:01.077281Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T23:16:01.079480Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-02T23:46:01.080831Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-03T00:16:01.082335Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-03T00:46:01.089160Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-03T01:16:01.083799Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-03T01:46:01.084825Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-03T01:54:43.896379Z  INFO herdr::platform::linux::shutdown: host shutdown requested; preserving session before pane termination
+2026-11-03T01:54:43.896550Z  INFO herdr::server::headless::lifecycle: server shutdown initiated reason=host shutdown
+2026-11-03T01:54:43.947003Z  INFO herdr::server::headless::lifecycle: completing server shutdown
+2026-11-03T01:54:43.950415Z  INFO herdr::persist::writer: preserved session recovery copy event="persist.backup" subsystem="persist" outcome="ok" path=/home/maru/.config/herdr/session.json backup_path=/home/maru/.config/herdr/session-snapshots/session-000000000000000000001793670883949006460-2153-0.json
+2026-11-03T01:54:43.951868Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/maru/.config/herdr/session.json workspaces=1
+2026-11-03T01:54:43.951885Z  INFO herdr::server::headless: headless server exiting
+2026-11-03T01:54:43.955247Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
+2026-11-03T01:54:43.974820Z  INFO herdr::pane: pane session terminated pane=1 pid=2171 signal=Hangup
+2026-11-03T01:54:43.976613Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=2153
+2026-11-06T12:16:33.074399Z  INFO herdr::api::server: api server listening path=/home/maru/.config/herdr/herdr.sock
+2026-11-06T12:16:33.082717Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-11-06T12:16:33.087333Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=22244
+2026-11-06T12:16:33.088559Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-11-06T12:16:33.088630Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-11-06T12:16:33.261489Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-06T12:16:33.262780Z  INFO herdr::server::headless::bootstrap: restored session already has workspaces; ignoring startup cwd cwd=/home/maru/language-learning/de/prompts
+2026-11-06T12:16:33.263046Z  INFO herdr::server::headless: client protocol socket listening path=/home/maru/.config/herdr/herdr-client.sock
+2026-11-06T12:16:33.263290Z  INFO herdr::server::headless::bootstrap: herdr server started api_socket=/home/maru/.config/herdr/herdr.sock client_socket=/home/maru/.config/herdr/herdr-client.sock
+2026-11-06T12:16:33.265362Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=22226
+2026-11-06T12:16:33.280605Z  INFO herdr::server::headless: client connected client_id=2 cols=44 rows=27 cell_width_px=13 cell_height_px=35 surface_active=true render_encoding=SemanticFrame
+2026-11-06T12:16:38.852547Z  INFO herdr::server::headless: client detached client_id=2
+2026-11-06T12:46:33.263799Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"

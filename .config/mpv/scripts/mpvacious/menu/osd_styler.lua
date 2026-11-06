@@ -11,7 +11,7 @@ local OSD = {
     messages = {},
     border_size = 2.5,
     font_size = 30,
-    font_name = "Noto Sans",
+    font_name = "Noto Sans CJK JP",
 }
 
 function OSD:new(o)

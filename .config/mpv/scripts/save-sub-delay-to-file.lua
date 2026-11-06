@@ -12,7 +12,7 @@ function retiming_window:new()
         tool_path = [[C:\<insert path>\sub-tools.exe]], --SETUP: replace with path to sub-tools (https://github.com/Rapptz/sub-tools/releases)
         preserve_original_file = true, --If true, will not replace the original/first subtitle file executed on
         save_to_new_file = true, --If true, outputted sub file is renamed to the currently playing video (along with any replacements specified by rename_filename)
-        rename_filename = {"(.*)", "%1.de", 1}, --string.gsub() params: provide a pattern, replacement string, and limit for number of substitutions
+        rename_filename = {"(.*)", "%1.ja", 1}, --string.gsub() params: provide a pattern, replacement string, and limit for number of substitutions
             --read https://www.lua.org/manual/5.3/manual.html#6.4.1 for pattern-matching
         keybinds = {
             {'1', 'set-start-time', function() options:set_sub_start() end, {}},

@@ -1,11 +1,16 @@
 -- so other plugins can see it 
 vim.g.mapleader = " "
 
+-- unhighlight after searching 
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
+
 require('config.options') 
 require('config.keybinds') 
 
 -- plugin manager 
 require("config.lazy")
+
 
 -- oil file browser's setup 
 -- header or whatever it's called in neovim is at lua/plugins/oil.lua
@@ -29,7 +34,8 @@ require("oil").setup({
 	["g."] = { "actions.toggle_hidden", mode = "n" },
 	["g\\"] = { "actions.toggle_trash", mode = "n" },
     },	
-    -- integrate image functionality in oil
+ 
+-- integrate image functionality in oil
     image = function()
 	local oil = require("oil")
 	local filename = oil.get_cursor_entry().name

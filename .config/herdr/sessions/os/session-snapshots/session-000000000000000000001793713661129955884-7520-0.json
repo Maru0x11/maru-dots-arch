@@ -1,0 +1,69 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "w1",
+      "custom_name": null,
+      "identity_cwd": "/home/maru/Projects/os_assign_one",
+      "public_pane_numbers": {
+        "1": 9,
+        "4": 10,
+        "9": 15
+      },
+      "next_public_pane_number": 16,
+      "public_tab_numbers": [
+        1,
+        5
+      ],
+      "next_public_tab_number": 6,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 1
+              },
+              "second": {
+                "Pane": 4
+              }
+            }
+          },
+          "panes": {
+            "1": {
+              "cwd": "/home/maru/Projects/os_assign_one"
+            },
+            "4": {
+              "cwd": "/home/maru/Projects/os_assign_one"
+            }
+          },
+          "zoomed": true,
+          "focused": 1,
+          "root_pane": 1
+        },
+        {
+          "custom_name": "doc",
+          "layout": {
+            "Pane": 9
+          },
+          "panes": {
+            "9": {
+              "cwd": "/home/maru/Projects/os_assign_one"
+            }
+          },
+          "zoomed": false,
+          "focused": 9,
+          "root_pane": 9
+        }
+      ],
+      "active_tab": 0
+    }
+  ],
+  "active": 0,
+  "selected": 0,
+  "sidebar_width": null,
+  "sidebar_section_split": null,
+  "collapsed_space_keys": []
+}

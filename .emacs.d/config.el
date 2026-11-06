@@ -106,28 +106,29 @@
 (setq org-confirm-babel-evaluate nil)
 
 ;; Set up package.el to work with MELPA
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/"))
-(package-initialize)
-(package-refresh-contents)
+  (require 'package)
+  (add-to-list 'package-archives
+               '("melpa" . "https://melpa.org/packages/"))
+  (package-initialize)
+  (package-refresh-contents)
 
-;; Enable Evil and evil-collection 
-(setq evil-want-integration t) ;; This is optional since it's already set to t by default.
-(setq evil-want-keybinding nil)
-(require 'evil)
-(evil-mode 1)
-(when (require 'evil-collection nil t)
-  (evil-collection-init))
+  
+;; Enable Evil and evil-collection
 
-;;use tab to fold / unfold stuff in org
-(with-eval-after-load 'org
-  (evil-define-key 'normal org-mode-map (kbd "TAB") 'org-cycle))
+  (setq evil-want-keybinding nil)
+  (require 'evil)
+  (evil-mode 1)
+  (when (require 'evil-collection nil t)
+    (evil-collection-init))
 
-;; commeting stuff with gcc
+  ;;use tab to fold / unfold stuff in org
+  (with-eval-after-load 'org
+    (evil-define-key 'normal org-mode-map (kbd "TAB") 'org-cycle))
 
-(require 'evil-commentary)
-(evil-commentary-mode)
+  ;; commeting stuff with gcc
+
+  (require 'evil-commentary)
+  (evil-commentary-mode)
 
 ;; disable goy stuff uptop
 
