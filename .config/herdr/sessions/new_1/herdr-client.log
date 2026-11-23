@@ -1,4 +1,0 @@
-2026-11-18T21:49:26.599342Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=7849
-2026-11-18T21:49:26.599396Z  INFO herdr::client: connecting to server path=/home/maru/.config/herdr/sessions/new_1/herdr-client.sock
-2026-11-18T21:49:26.659913Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
-2026-11-18T23:31:11.992852Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=7849
