@@ -4,8 +4,11 @@ vim.opt.relativenumber = true
 vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"
 
-
-
-
+-- disable lsp wwarnings
+vim.diagnostic.config({
+    underline = false,
+    virtual_text = false,
+    signs= false,
+})
 
 

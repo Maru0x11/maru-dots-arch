@@ -4,14 +4,11 @@ vim.g.mapleader = " "
 -- unhighlight after searching 
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
-
-require('config.options') 
-require('config.keybinds') 
-
 -- plugin manager 
 require("config.lazy")
 
-
+require('config.options') 
+require('config.keybinds') 
 -- oil file browser's setup 
 -- header or whatever it's called in neovim is at lua/plugins/oil.lua
 require("oil").setup({

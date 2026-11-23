@@ -4,18 +4,16 @@
     {
       "id": "w1",
       "custom_name": null,
-      "identity_cwd": "/home/maru/Projects/os_assign_one",
+      "identity_cwd": "/home/maru/uni/Algos",
       "public_pane_numbers": {
         "2": 2,
-        "4": 10,
-        "1": 9
+        "1": 1
       },
-      "next_public_pane_number": 11,
+      "next_public_pane_number": 3,
       "public_tab_numbers": [
-        1,
-        2
+        1
       ],
-      "next_public_tab_number": 5,
+      "next_public_tab_number": 2,
       "tabs": [
         {
           "custom_name": null,
@@ -27,35 +25,21 @@
                 "Pane": 1
               },
               "second": {
-                "Pane": 4
+                "Pane": 2
               }
             }
           },
           "panes": {
-            "4": {
-              "cwd": "/home/maru/Projects/os_assign_one"
+            "2": {
+              "cwd": "/home/maru/uni/Algos"
             },
             "1": {
-              "cwd": "/home/maru/Projects/os_assign_one"
+              "cwd": "/home/maru/uni/Algos"
             }
           },
-          "zoomed": false,
+          "zoomed": true,
           "focused": 1,
           "root_pane": 1
-        },
-        {
-          "custom_name": "docs",
-          "layout": {
-            "Pane": 2
-          },
-          "panes": {
-            "2": {
-              "cwd": "/home/maru/Projects/os_assign_one"
-            }
-          },
-          "zoomed": false,
-          "focused": 2,
-          "root_pane": 2
         }
       ],
       "active_tab": 0

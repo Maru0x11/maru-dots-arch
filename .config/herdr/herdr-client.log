@@ -137,3 +137,27 @@
 2026-11-06T12:16:33.273050Z  INFO herdr::client: connecting to server path=/home/maru/.config/herdr/herdr-client.sock
 2026-11-06T12:16:33.280883Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
 2026-11-06T12:16:38.853158Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=22225
+2026-11-09T16:24:16.519178Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=44090
+2026-11-09T16:24:16.519585Z  INFO herdr::client: connecting to server path=/home/maru/.config/herdr/herdr-client.sock
+2026-11-09T16:24:16.745615Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-11-09T19:49:27.463011Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=44090
+2026-11-10T20:59:13.482261Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=51990
+2026-11-10T20:59:13.482514Z  INFO herdr::client: connecting to server path=/home/maru/.config/herdr/herdr-client.sock
+2026-11-10T20:59:13.729643Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-11-10T21:01:36.010226Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=51990
+2026-11-10T21:01:46.678269Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=53297
+2026-11-10T21:01:46.678292Z  INFO herdr::client: connecting to server path=/home/maru/.config/herdr/herdr-client.sock
+2026-11-10T21:01:46.908717Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-11-10T21:38:52.601300Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=53297
+2026-11-11T06:10:13.617191Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=13889
+2026-11-11T06:10:13.617556Z  INFO herdr::client: connecting to server path=/home/maru/.config/herdr/herdr-client.sock
+2026-11-11T06:10:13.846629Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-11-11T06:10:17.391350Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=13889
+2026-11-18T02:06:48.802320Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=108037
+2026-11-18T02:06:48.802627Z  INFO herdr::client: connecting to server path=/home/maru/.config/herdr/herdr-client.sock
+2026-11-18T02:06:49.032365Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-11-18T02:11:38.590934Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=108037
+2026-11-18T21:45:21.800904Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=7087
+2026-11-18T21:45:21.801212Z  INFO herdr::client: connecting to server path=/home/maru/.config/herdr/herdr-client.sock
+2026-11-18T21:45:21.832234Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-11-18T21:47:53.893565Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=7087

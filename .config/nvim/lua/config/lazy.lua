@@ -15,13 +15,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+     "neovim/nvim-lspconfig" ,
     spec = {
 	-- import your plugins
 	{ import = "plugins" },
     },
-    rocks = {
-	enabled = true,
-	hererocks = true,
-    },
+	--    rocks = {
+	-- enabled = true,
+	-- -- hererocks = true,
+	--    },
     change_detection = {notify = false},
 })

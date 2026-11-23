@@ -23,28 +23,32 @@ export LIBVA_DRIVER_NAME=iHD
 
 export EDITOR=nvim
 
-#aliases 
-
-alias ll='lsd -l'
-alias lh='lsd -lah'
-
 # alywas run obs with prime-run to use the gpu
 alias obs='prime-run obs'
-
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="apple"
+# ZSH_THEME="Ultima Theme"
 
 #oh my zsh plugins
 
+# Modern Dark Pro Capsule Theme Config
+ZSH_THEME="agnoster"
+
+
 plugins=(git archlinux zsh-autosuggestions zsh-syntax-highlighting zoxide)
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ffffff,bg=grey,bold,underline"
-
 source $ZSH/oh-my-zsh.sh
+
+#aliases 
+
+alias ll='lsd -l'
+alias ls='lsd'
+alias lh='lsd -lah'
+alias ytsong='yt-dlp -i -x -f ba --embed-thumbnail --add-metadata'
+
 
 
 # fnm
@@ -59,4 +63,4 @@ fi
 export PATH="/home/maru/.local/bin:$PATH"
 export PATH="/home/maru/.local/bin:$PATH"
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"

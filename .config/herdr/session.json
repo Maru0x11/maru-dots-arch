@@ -2,13 +2,14 @@
   "version": 3,
   "workspaces": [
     {
-      "id": "w5",
+      "id": "w8",
       "custom_name": null,
-      "identity_cwd": "/home/maru",
+      "identity_cwd": "/home/maru/uni/compression",
       "public_pane_numbers": {
-        "1": 1
+        "1": 1,
+        "2": 3
       },
-      "next_public_pane_number": 2,
+      "next_public_pane_number": 4,
       "public_tab_numbers": [
         1
       ],
@@ -17,11 +18,23 @@
         {
           "custom_name": null,
           "layout": {
-            "Pane": 1
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 1
+              },
+              "second": {
+                "Pane": 2
+              }
+            }
           },
           "panes": {
             "1": {
-              "cwd": "/home/maru"
+              "cwd": "/home/maru/uni/compression"
+            },
+            "2": {
+              "cwd": "/home/maru/uni/compression"
             }
           },
           "zoomed": false,
